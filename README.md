@@ -10,7 +10,7 @@ We propose an adaptive approach to predict the stock price based on news impact 
 
 2. News Data: Thomson Reuters
 
-## Build Instructions [Clone the repository]
+## Build Instructions
 
 ### <ins> Data Collection </ins>
 
