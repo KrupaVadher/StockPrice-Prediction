@@ -23,11 +23,10 @@ We propose an adaptive approach to predict the stock price based on news impact 
   
 &nbsp;&nbsp;&nbsp; <ins>News Headlines</ins>
 
-- From your terminal, navigate to the directory /Headlines/JSCode, and run `node headlines.js`
+- From your terminal, navigate to the directory Data_Collection/News_Data/, and run `node headlines.js`
   - It will download a json files for each company, containing the fields like: Company's Ticker_ID, News Headlines, Article link, and Date
 
 &nbsp;&nbsp;&nbsp; <ins>News Body</ins>
 
-- After successfully downloading the json files for headlines, copy all json files into the directory /Body/JSCode.
-- From your terminal, navigate to the directory /Body/JSCode, and run `node news_body.js`
+- From your terminal, navigate to the directory Data_Collection/News_Data/, and run `node news_body.js`
   - It will download a json files for each company, containing the fields like: Article link and Body (News Article Text)
