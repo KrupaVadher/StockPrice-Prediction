@@ -25,7 +25,7 @@ let news_bodyExtract = html => {
   }
   else {
     let text = $('div.StandardArticleBody_body pre').text();
-    news_body += text + "\n";
+    news_body += text.substring(0, 1500) + "\n";
   }
 
   return news_body;
@@ -55,10 +55,13 @@ function* run() {
 
     //Navigate to the links stored in an array 'links_collection' and call news_bodyExtract function to retrieve news body data
 
-    // var i=0;
+    //Counter to count links_collection array length
+    var i = 1;
     fs.appendFileSync('body_' + company_name + '.json', '[\n');
 
     for (let link of links_collection) {
+      // if(i>5){break;}
+
       const nightmare = Nightmare({ show: false })
 
       yield nightmare
@@ -75,15 +78,20 @@ function* run() {
           };
           //Write data into a JSON file
           let string_to_write = JSON.stringify(data_to_write, null, 2);
-          string_to_write = string_to_write.concat(',\n');
+          
+          if (i == links_collection.length) {
+            string_to_write = string_to_write.concat('\n');
+          }
+          else {
+            string_to_write = string_to_write.concat(',\n');
+          }
           fs.appendFileSync('body_' + company_name + '.json', string_to_write);
         }).catch(err => {
           console.log(err);
         })
       yield nightmare.end()
 
-      // if(i>5){break;}
-      // i++;
+      i++;
     }
     fs.appendFileSync('body_' + company_name + '.json', ']\n');
   }
