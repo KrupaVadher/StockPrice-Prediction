@@ -14,6 +14,8 @@ We propose an adaptive approach to predict the stock price based on news impact 
 
 ### <ins> Data Collection </ins>
 
+  **Companies:**  Tesla, Apple, AMD, Disney 
+
 **1. Stock Data:** Run  `./data_fetcher.sh` in your terminal
 * It will download a csv file containing the fields like: Date, Open, High, Low, Close, Adj. Close, and Volume 
 
