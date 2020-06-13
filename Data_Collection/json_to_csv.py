@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# A code to convert json files of Headlines and Article Body belonging to the four companies, into csv files.
+
 import pandas as pd
 import numpy as np
 import string
