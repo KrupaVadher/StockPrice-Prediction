@@ -32,3 +32,5 @@ We propose an adaptive approach to predict the stock price based on news impact 
 
 - From your terminal, navigate to the directory Data_Collection/News_Data/, and run `node news_body.js`
   - It will download a json files for each company, containing the fields like: Article link and Body (News Article Text)
+
+ Finally, run generate_csv.py file to generate a csv file containing both the news headlines and body details for each company.
