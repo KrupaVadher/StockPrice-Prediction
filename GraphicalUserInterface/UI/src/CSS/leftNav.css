@@ -1,0 +1,41 @@
+.leftNav {
+  max-width: 25%;
+  min-width: 300px;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 67px;
+  bottom: 0px;
+  border-right: 1px solid lightgray;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navItems {
+  flex: 1;
+  flex-direction: column;
+  padding-top: 40;
+}
+
+.navItem {
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.navItem a {
+  color: black;
+}
+
+.active {
+  background-color: #e1edf5;
+}
+.active a {
+  color: #007bff;
+}

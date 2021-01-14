@@ -1,0 +1,48 @@
+#td.nav-item {
+  padding: 10px;
+}
+
+.nav-link {
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black;
+  background-color: white;
+  border-left: 2px solid black;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0rem;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  margin: 0;
+  margin-left: 10px;
+  width: 96%;
+  background-color: rgb(199, 199, 199);
+  height: 1px;
+}
+
+a.nav-item.nav-link {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  text-align: center;
+}
+
+.heading {
+  color: #0055a2;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.exp {
+  margin: 20px;
+}
+.fade.tab-pane.active.show {
+  background-color: white !important;
+}
